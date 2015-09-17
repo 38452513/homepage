@@ -1,0 +1,149 @@
+<h1 id='animation'>动画</h1>
+<hr />
+<p>这一次给各位介绍的是BKE的动画类，它包含了 <code>animate</code> 、 <code>action</code> 与 <code>trans</code> 。三者都是在BKE中制作动画时必不可缺的组成部分。
+虽然实际说来三者其实是不同的三个类，不过考虑到功能划分，我们这一次就先对 <code>animate</code> 类先进行说明。</p>
+<h2 id='animation-animate'>animate</h2>
+<p>顾名思义，<code>animate</code> 命令常被用于创建逐帧动画时使用，您可以利用此命令来创建一个循环播放的动画。</p>
+<p>其命令格式如下：</p>
+<p>&emsp;&emsp;<strong>animate</strong> <em>*mode</em><br>
+&emsp;&emsp;&emsp;&emsp;动画系命令关键字。</p>
+<p>&emsp;&emsp;&emsp;<em>mode</em><br>
+&emsp;&emsp;&emsp;&emsp;接下来执行动画命令的类型。<br></p>
+<p><code>animate</code> 命令有6种不同的模式（mode关键字），它们分别是：</p>
+<pre><code>horizontal vertical multfiles start cell stop
+</code></pre>
+
+<p>对于不同的 <code>mode</code> ， <code>animate</code> 命令有不同的参数，这里就向大家顺序介绍一下：</p>
+<p>&emsp;&emsp;<strong>animate</strong> <em>*mode=&quot;horizontal&quot; *index *file *frame interval loop</em><br>
+&emsp;&emsp;&emsp;&emsp;动画系命令，模式为剪裁方式（动画帧水平排列）。</p>
+<p>&emsp;&emsp;&emsp;<em>index</em><br>
+&emsp;&emsp;&emsp;&emsp;创建的动画的编号（和精灵共用一个编号集合）。<br>
+&emsp;&emsp;&emsp;<em>file</em> <br>
+&emsp;&emsp;&emsp;&emsp;读取的文件。<br>
+&emsp;&emsp;&emsp;<em>frame</em><br>
+&emsp;&emsp;&emsp;&emsp;动画的帧数。<br>
+&emsp;&emsp;&emsp;<em>interval<em><br>
+&emsp;&emsp;&emsp;&emsp;每帧的间隔，默认为33（30fps）。<br>
+&emsp;&emsp;&emsp;</em>loop</em><br>
+&emsp;&emsp;&emsp;&emsp;动画循环模式，值有 &quot;none&quot;（不循环），&quot;forword&quot;（单向循环），&quot;bouncing&quot;（布朗斯循环）。<br>
+<br></p>
+<hr />
+<p>&emsp;&emsp;<strong>animate</strong> <em>*mode=&quot;vertical&quot; *index *file *frame interval loop</em><br>
+&emsp;&emsp;&emsp;&emsp;动画系命令，模式为垂直模式（动画帧垂直排列）。</p>
+<p>&emsp;&emsp;&emsp;<em>index</em><br>
+&emsp;&emsp;&emsp;&emsp;创建的动画的编号（和精灵共用一个编号集合）。<br>
+&emsp;&emsp;&emsp;<em>file</em> <br>
+&emsp;&emsp;&emsp;&emsp;读取的文件。<br>
+&emsp;&emsp;&emsp;<em>frame</em><br>
+&emsp;&emsp;&emsp;&emsp;动画的帧数。<br>
+&emsp;&emsp;&emsp;<em>interval<em><br>
+&emsp;&emsp;&emsp;&emsp;每帧的间隔，默认为33（30fps）。<br>
+&emsp;&emsp;&emsp;</em>loop</em><br>
+&emsp;&emsp;&emsp;&emsp;动画循环模式，值有 &quot;none&quot;（不循环），&quot;forword&quot;（单向循环），&quot;bouncing&quot;（布朗斯循环）。<br></p>
+<script language=JavaScript>
+var number=1; 
+function LMYC() {
+var lbmc;
+    for (i=1;i<=number;i++) {
+        lbmc = eval('LM' + i);
+        lbmc.style.display = 'none';
+    }
+}
+ 
+function ShowFLT(i) {
+    lbmc = eval('LM' + i);
+    if (lbmc.style.display == 'none') {
+        LMYC();
+        lbmc.style.display = '';
+    }
+    else {
+        lbmc.style.display = 'none';
+    }
+}
+</script>
+<table width="600" border="0" cellspacing="2" cellpadding="0">
+  <tr>
+    <td width="56" height="40" align="right" class="STYLE1">+</td>
+    <td width="544" height="40" class="dotline"><a onClick=javascript:ShowFLT(1) href="javascript:void(null)">不同循环模式的说明</a></td>
+  </tr>
+  <tr id=LM1 style="DISPLAY: none">
+    <td height="30" align="right" bgcolor="#f5f9ed"><span class="STYLE2">_</span></td>
+    <td height="30" bgcolor="#f5f9ed">
+	在假定一个动画文件有4帧的情况下：<br>
+		&emsp;&emsp;不循环：顾名思义，动画将不会循环，仅仅只是按顺序1-2-3将动画播放一次后停止。<br>
+		&emsp;&emsp;单向循环：动画会按照1-2-3-4｜1-2-3-4｜1-2-3-4这样的顺序来循环播放，在播放完最后一帧后重新跳转到第一帧。<br>
+		&emsp;&emsp;布朗斯循环：在没有delay的情况下，动画会按照1-2-3-4-3-2-1-2-3-4的顺序循环；如果在有delay的情况下，动画则会按照1-2-3-4-3-2-1｜2-3-4-3-2-1｜2-3-4-3-2-1这样的顺序循环。<br>
+	</td>
+  </tr>
+</table>
+<p>在这里我们准备了两张不同的素材，以分别对应两种不同的剪裁模式：</p>
+<p><br>
+<center><img src="guide/images/rakuda-1.png" alt="horizontal" /></center>
+<center><img src="guide/images/rakuda-3.png" alt="vertical" /></center></p>
+<p>文件一对应了 <code>horizontal</code> 模式，而文件二对应的则是 <code>vertical</code> 模式。可以直观的看出前者是横向剪裁，后者则是竖向剪裁。</p>
+<p>请您先将这两个文件保存下来，在之后的示例中我们将会使用到它。</p>
+<p>接下来我们继续介绍剩余的模式：</p>
+<p>&emsp;&emsp;<strong>animate</strong> <em>*mode=&quot;multifiles&quot; *index *file interval loop delay</em><br>
+&emsp;&emsp;&emsp;&emsp;从多个文件创建一个动画。</p>
+<p>&emsp;&emsp;&emsp;<em>index</em><br>
+&emsp;&emsp;&emsp;&emsp;创建的动画的编号（和精灵共用一个编号集合）。<br>
+&emsp;&emsp;&emsp;<em>file</em> <br>
+&emsp;&emsp;&emsp;&emsp;将要添加的文件列表。<br>
+&emsp;&emsp;&emsp;<em>interval</em><br>
+&emsp;&emsp;&emsp;&emsp;每帧的间隔，默认为33（30fps）。<br>
+&emsp;&emsp;&emsp;<em>loop<em><br>
+&emsp;&emsp;&emsp;&emsp;动画是否循环，默认为 false 。<br>
+&emsp;&emsp;&emsp;</em>delay</em><br>
+&emsp;&emsp;&emsp;&emsp;动画每次循环之间的间隔 。<br></p>
+<hr />
+<p>&emsp;&emsp;<strong>animate</strong> <em>*mode=&quot;start&quot; *index</em><br>
+&emsp;&emsp;&emsp;&emsp;开始一个动画。</p>
+<p>&emsp;&emsp;&emsp;<em>index</em><br>
+&emsp;&emsp;&emsp;&emsp;欲开始的动画的编号（和精灵共用一个编号集合）。<br></p>
+<p>&emsp;&emsp;<strong>animate</strong> <em>*mode=&quot;stop&quot; *index</em><br>
+&emsp;&emsp;&emsp;&emsp;停止一个动画。</p>
+<p>&emsp;&emsp;&emsp;<em>index</em><br>
+&emsp;&emsp;&emsp;&emsp;欲停止的动画的编号（和精灵共用一个编号集合）。<br></p>
+<hr />
+<p>&emsp;&emsp;<strong>animate</strong> <em>*mode=&quot;cell&quot; *index *frame</em><br>
+&emsp;&emsp;&emsp;&emsp;切换动画到某一帧（会停止动画）。</p>
+<p>&emsp;&emsp;&emsp;<em>index</em><br>
+&emsp;&emsp;&emsp;&emsp;欲更改的动画的编号（和精灵共用一个编号集合）。<br>
+&emsp;&emsp;&emsp;<em>file</em> <br>
+&emsp;&emsp;&emsp;&emsp;欲更改动画到哪一帧。<br></p>
+<pre><code>请注意， `start` 仅仅只能作用于单个精灵，不能传入数组作为参数。
+</code></pre>
+
+<p>在介绍完 <code>animate</code> 类所有的 <code>mode</code> 之后，让我们来练练手吧！</p>
+<p>首先请将下面的图片保存到您的硬盘上：</p>
+<p><center><img src="guide/images/ch-1.png" alt="ch1" />&emsp;&emsp;<img src="guide/images/ch-2.png" alt="ch2" />&emsp;&emsp;<img src="guide/images/ch-3.png" alt="ch3" /></center></p>
+<p>接着，您可以直接复制下面的代码，保存编译之后运行以查看它的作用，不过我还是推荐您自己先写一遍 :)</p>
+<pre><code>*main
+@layer index=10 width=800 height=600 color=0xFFFFFF opacity=255
+@addto index=10 target=basic_layer
+@wait time=1000 canskip=false
+
+@animate mode=&quot;horizontal&quot; index=2 file=&quot;rakuda-1&quot; frame=4 interval=180 loop=&quot;forward&quot;
+@addto index=2 target=10 zorder=10 pos=[250,280]
+@animate mode=&quot;start&quot; index=2
+@wait time=1000 canskip=false
+
+@animate mode=&quot;vertical&quot; index=3 file=&quot;rakuda-3&quot; frame=4 interval=360 loop=&quot;forward&quot;
+@addto index=3 target=10 zorder=10 pos=[350,280]
+@animate mode=&quot;start&quot; index=3
+@wait time=1000 canskip=false
+
+@animate mode=&quot;multifiles&quot; index=4 file=[&quot;ch-1&quot;,&quot;ch-2&quot;,&quot;ch-3&quot;] interval=360 loop=&quot;true&quot; delay=500
+@addto index=4 target=10 zorder=10 pos=[400,280]
+@animate mode=&quot;start&quot; index=4
+@wait time=2000 canskip=false
+
+@animate mode=&quot;stop&quot; index=2
+@animate mode=&quot;cell&quot; index=3 frame=2
+</code></pre>
+
+<p>首先，我们使用两张连续的图片创建了两个动画，分别对应的是横向剪裁模式与竖向剪裁模式。在每一次创建结束后，我们都使用了 <code>start</code> 模式来开始对应的动画，如果我们不使用 <code>start</code> 命令，对应的动画则不会开始播放，请注意。</p>
+<p>接下来我们使用了 <code>muiltfiles</code> 模式，以三张独立的图片创建了一个动画。这里需要说明的是，在 <code>muiltfiles</code> 模式中， <code>interval</code> 这个参数负责控制帧与帧之间的间隔时间，而 <code>delay</code> 参数则用于控制每次循环与循环之间的间隔时间。您可以自行修改 <code>delay</code> 的大小来体会。</p>
+<p>在最后两行命令中，我们停止了编号为2的动画文件的播放，使编号为3的动画切换到了第2帧（注意，这样做会停止动画的播放）。</p>
+<p>以上就是 <code>animate</code> 类的所有命令了，怎么样，是不是觉得很简单呢？</p>
+<p><code>animate</code> 类的用处很广泛，您可以使用动画文件来创建一个动态的按钮，或者是在画面上循环一段动画，加强您游戏的演出效果等，甚至您还可以使用它来制作RPG类游戏的NPC！</p>

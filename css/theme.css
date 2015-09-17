@@ -1,0 +1,50 @@
+*{
+	font-family: "思源黑体 CN Regular",
+				"Noto Sans S Chinese DemiLight",
+				"Hiragino Sans GB", 
+				"Microsoft YaHei", 
+				"文泉驿微米黑",
+				sans-serif; 
+}
+
+.bk-banner{
+	/*min-height: 590px;*/
+	overflow: hidden;
+	background-image: url('../images/polygon-1.jpg');
+	background-size: 100%;
+}
+.bk-banner .container{
+	margin-top: 120px;
+	margin-bottom: 60px;
+}
+
+ul.navbar-nav li{
+	border-top: 4px solid transparent;
+}
+
+ul.navbar-nav li.active{
+	border-top: 4px solid #37BA55;
+	background-color: transparent;
+}
+ul.navbar-nav li:hover{
+	border-top: 4px solid #37BA55;
+}
+
+ul.navbar-nav li a{
+	padding-top: 11px;
+	color: #575757 !important;
+}
+
+ul.navbar-nav li.active a{
+	background-color: transparent !important;
+}
+footer{
+	height: 120px;
+	border-top: 1px solid #e3e3e3;
+	text-align: center;
+}
+
+footer .container{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}

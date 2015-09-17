@@ -1,0 +1,85 @@
+<h1 id='sound'>音频播放</h1>
+<hr />
+<p>本章将为您介绍关于BKE的音频播放部分。</p>
+<p>音频文件可以通过音频相关命令来播放，常用的有 <code>bgm</code> , <code>se</code> , <code>voice</code> 等命令。</p>
+<p>BKE引擎支持wav、ogg与mp3等常用格式的音频文件。鉴于现在各种各样的转换器的普及，将音频文件从原格式转换到质量较高的wav格式或者是压缩率较高的ogg格式都已经不存在太大的技术困难了，因此我们这里也不再赘述其中的细节。</p>
+<p>对于音频系列的命令来说，BKE中还存在着<strong>频道</strong>的概念。有的时候，您可能希望同时能播放多个音效文件，这个时候您就需要使用不同的频道来控制这些文件的播放以及停止。而 <code>bgm</code> 和 <code>voice</code> 对应的背景音乐和语音一般不会同时播放多个文件，因此都只占用一个频道。</p>
+<p>默认情况下，<code>bgm</code> 命令对应的频道编号是-1，而 <code>voice</code> 命令对应的频道编号是-2。 <code>se</code> 命令无法使用编号小于0的频道（包括 <code>bgm</code> 频道和 <code>voice</code> 频道），这将有助于减少潜在的混乱和错误。</p>
+<p>除此之外，您可以使用 <code>volume</code> 命令调整频道的音量。 <code>pause</code> 命令和 <code>resume</code> 命令允许您暂停和继续播放某个频道的音频文件，而 <code>fade</code> 命令可以为您实现音量平滑变化的声音效果。</p>
+<h2 id='sound-play'>播放命令</h2>
+<p>如果您想播放任何音频文件，您必须从 <code>bgm</code> , <code>se</code> , <code>voice</code> 三个命令中选择一个合适的命令来使用。 <code>bgm</code> 命令适合播放游戏的背景音乐， <code>voice</code> 命令适合播放人物语音，而 <code>se</code>命令适合播放其他任何需要播放的音频文件。</p>
+<p>&emsp;&emsp;<strong>bgm</strong>  <em>*file loop=true vol=100 fadein=0 loopto=0</em><br>
+&emsp;&emsp;在bgm频道播放指定的音频文件。</p>
+<p>&emsp;&emsp;&emsp;<em>*file</em> - 字符串<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;将要播放的文件。<br>
+&emsp;&emsp;&emsp;<em>loop=false</em> - 布尔值<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;是否循环，默认为false。<br>
+&emsp;&emsp;&emsp;<em>vol=100</em> - 音量型<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;播放音量，范围为0~100。<br>
+&emsp;&emsp;&emsp;<em>fadein=0</em> - 时间型<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;淡入时间。若该数值不为0，那么淡入开始时音量将自动被设置为0。<br>
+&emsp;&emsp;&emsp;<em>loopto=0</em> - 时间型<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;当音频播放结束时，若loop参数为true，那么将自动从该时间点开始重复播放。<br></p>
+<p>&emsp;&emsp;<strong>se</strong>  <em>*file channel=0 loop=false vol=100 fadein=0</em><br>
+&emsp;&emsp;在指定的频道播放指定的音频文件。该命令不接受loopto参数，因此不支持从音频的某一点重复播放功能。</p>
+<p>&emsp;&emsp;&emsp;<em>*file</em> - 字符串<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;将要播放的文件。<br>
+&emsp;&emsp;&emsp;<em>channel=0</em> - 整数型<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;将要使用的频道编号。<strong>不能是负数</strong>。在此文件播放前BKE将停止该频道当前正在播放的音频。<br>
+&emsp;&emsp;&emsp;<em>loop=false</em> - 布尔值<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;是否循环，默认为false。<br>
+&emsp;&emsp;&emsp;<em>vol=100</em> - 音量型<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;播放音量，范围为0~100。<br>
+&emsp;&emsp;&emsp;<em>fadein=0</em> - 时间型<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;淡入时间。若该数值不为0，那么淡入开始时音量将自动被设置为0。<br></p>
+<p>&emsp;&emsp;<strong>voice</strong>  <em>*file  vol=100</em><br>
+&emsp;&emsp;在voice频道播放指定的音频文件。不能重复播放该频道的音频文件，也不能设置淡入效果。</p>
+<p>&emsp;&emsp;&emsp;<em>*file</em> - 字符串<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;将要播放的文件。<br>
+&emsp;&emsp;&emsp;<em>vol=100</em> - 音量型<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;播放音量，范围为0~100。<br></p>
+<p>在实践中，如果您希望分开管理每个角色的语音音量，我建议您新建一个字典，并将各个角色的音量值保存到该字典的值中，用角色名称作为键，然后在调用voice命令的时候直接将vol参数的值设为该字典中相应角色的值即可。您也可以重新实现voice命令来达到您要的效果。</p>
+<p>范例代码：</p>
+<pre><code>@bgm file=&quot;bgm/bgm01.ogg&quot; vol=80 fadein=1000 loopto=30000
+//以80的音量播放bgm，1秒淡入时间，播放完成后loop到30秒处重复播放
+@se file=&quot;se/car.ogg&quot;
+//播放se
+@voice file=&quot;voice/nanami08213.ogg&quot;
+//播放语音
+</code></pre>
+
+<h2 id='sound-control'>音频控制命令</h2>
+<p>以下这些命令可以控制音频流，以及某频道的音量大小。</p>
+<p>&emsp;&emsp;<strong>pause</strong>  <em>*channel</em> <br>
+&emsp;&emsp;暂停一个频道，使用resume命令可以从当前位置继续播放该音频。<br>
+&emsp;&emsp;&emsp;<em>*channel</em> - 整数型<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;将要暂停的频道编号。可以直接填bgm和se（非字符串），系统会自动完成正确的操作。如果希望暂停se频道，您需要提供确切的编号。<br></p>
+<p>&emsp;&emsp;<strong>resume</strong>  <em>*channel</em> <br>
+&emsp;&emsp;继续播放一个因pause命令停止播放的频道。<br>
+&emsp;&emsp;&emsp;<em>*channel</em> - 整数型<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;将要继续播放的频道编号。可以直接填bgm和se（非字符串），系统会自动完成正确的操作。如果希望继续播放se频道，您需要提供确切的编号。<br></p>
+<p>&emsp;&emsp;<strong>stop</strong>  <em>channel fadeout=0</em> <br>
+&emsp;&emsp;停止一个频道，当channel参数不存在时将停止所有频道。<br>
+&emsp;&emsp;&emsp;<em>channel</em> - 整数型<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;将要停止的频道编号。若不存在则会停止所有频道。<br>
+&emsp;&emsp;&emsp;<em>fadeout=0</em> - 时间型<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;淡出的毫秒数。默认为0。<br></p>
+<p>&emsp;&emsp;<strong>volume</strong>  <em>*channel get/set</em> <br>
+&emsp;&emsp;调整或者获取一个频道的音量大小，瞬间完成。<strong>get和set参数至多且至少存在一个</strong>。<br>
+&emsp;&emsp;&emsp;<em>channel</em> - 整数型<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;将要处理的频道编号。<br>
+&emsp;&emsp;&emsp;<em>set</em> - 音量型<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;目标音量。<br>
+&emsp;&emsp;&emsp;<em>get</em> - 变量<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;目标变量。频道的音量值将保存到这个变量里。<br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;在其他命令的参数中，您也会遇到类似的get/set参数组。您只需要记住，如果您要使用这类命令，只须提供set和get中的一个即可。</p>
+<p>&emsp;&emsp;<strong>fade</strong>  <em>*channel *time *to stop=false</em> <br>
+&emsp;&emsp;将一个频道的音量渐变到给定值。<br>
+&emsp;&emsp;&emsp;<em>channel</em> - 整数型<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;将要渐变的频道编号。<br>
+&emsp;&emsp;&emsp;<em>*time</em> - 时间型<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;渐变的毫秒数。<br>
+&emsp;&emsp;&emsp;<em>to</em> - 音量型<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;目标音量。<br>
+&emsp;&emsp;&emsp;<em>stop=false</em> - 布尔值<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;渐变完成后是否停止播放，默认为false。<br></p>

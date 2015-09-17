@@ -1,0 +1,1179 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"p",
+				"p"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"get",
+				"guideContent"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"h",
+				"h1	Tag"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"li",
+				"list-style"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"pd",
+				"padding-bottom"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"fot",
+				"font-weight"
+			],
+			[
+				"out",
+				"outline-color"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"m",
+				"margin-bottom"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"hed",
+				"header	Tag"
+			],
+			[
+				"vte",
+				"vTextureCoord_invert"
+			],
+			[
+				"rend",
+				"renderTexture"
+			],
+			[
+				"cr",
+				"CrossFadeFilter"
+			],
+			[
+				"uni",
+				"universalFilter"
+			],
+			[
+				"va",
+				"vague"
+			],
+			[
+				"bel",
+				"belly"
+			],
+			[
+				"bell",
+				"bellyTexture"
+			],
+			[
+				"ti",
+				"tickFunctions"
+			],
+			[
+				"fu",
+				"tickFunctions"
+			],
+			[
+				"sa",
+				"stage"
+			],
+			[
+				"buff",
+				"bufferStage"
+			],
+			[
+				"red",
+				"renderer"
+			],
+			[
+				"ru",
+				"rule"
+			],
+			[
+				"rul",
+				"ruleTexture"
+			],
+			[
+				"spr",
+				"Sprite"
+			],
+			[
+				"sta",
+				"stage2"
+			],
+			[
+				"pr",
+				"pretrans"
+			],
+			[
+				"pre",
+				"PretransFilter"
+			],
+			[
+				"pro",
+				"progress"
+			],
+			[
+				"bg",
+				"bgTexture"
+			],
+			[
+				"fi",
+				"filters"
+			],
+			[
+				"ma",
+				"mapFilter"
+			],
+			[
+				"add",
+				"addChild"
+			],
+			[
+				"Pi",
+				"PIXI"
+			],
+			[
+				"sp",
+				"Sprite"
+			],
+			[
+				"fro",
+				"fromImage"
+			],
+			[
+				"te",
+				"Texture"
+			],
+			[
+				"pix",
+				"pixelateFilter"
+			],
+			[
+				"node",
+				"nodeRSA"
+			],
+			[
+				"cha",
+				"chapter"
+			],
+			[
+				"de",
+				"device"
+			],
+			[
+				"gam",
+				"game"
+			],
+			[
+				"pla",
+				"player"
+			],
+			[
+				"is",
+				"isp_id"
+			],
+			[
+				"reg",
+				"region_id"
+			],
+			[
+				"count",
+				"county_id"
+			],
+			[
+				"coun",
+				"county"
+			],
+			[
+				"cit",
+				"city_id"
+			],
+			[
+				"ar",
+				"area_id"
+			],
+			[
+				"end",
+				"endTime"
+			],
+			[
+				"ser",
+				"series"
+			],
+			[
+				"acc",
+				"account"
+			],
+			[
+				"se",
+				"session"
+			],
+			[
+				"pl",
+				"player"
+			],
+			[
+				"ch",
+				"checkNotLogin"
+			],
+			[
+				"pass",
+				"passport"
+			],
+			[
+				"cont",
+				"conditions"
+			],
+			[
+				"req",
+				"req"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"gi",
+				"giftcode"
+			],
+			[
+				"per",
+				"permission"
+			],
+			[
+				"tem",
+				"temp"
+			],
+			[
+				"fin",
+				"findOne"
+			],
+			[
+				"po",
+				"post"
+			],
+			[
+				"log",
+				"loginRecord"
+			],
+			[
+				"rec",
+				"recordModel"
+			],
+			[
+				"fn",
+				"function"
+			],
+			[
+				"mo",
+				"mobile"
+			],
+			[
+				"mobi",
+				"mobile"
+			],
+			[
+				"q",
+				"query"
+			],
+			[
+				"requ",
+				"request"
+			],
+			[
+				"mob",
+				"mobile"
+			],
+			[
+				"base",
+				"baseModel"
+			],
+			[
+				"res",
+				"res"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"userga",
+				"usergames"
+			],
+			[
+				"user",
+				"userGames"
+			],
+			[
+				"us",
+				"usergames"
+			],
+			[
+				"_us",
+				"_usergames"
+			],
+			[
+				"lis",
+				"list-toolbar"
+			],
+			[
+				"btn",
+				"btn-toolbar"
+			],
+			[
+				"pub",
+				"publicKey"
+			],
+			[
+				"no",
+				"nodeRSA"
+			],
+			[
+				"ac",
+				"active"
+			],
+			[
+				"act",
+				"activityTimes"
+			],
+			[
+				"for",
+				"forbidden"
+			],
+			[
+				"che",
+				"checkLogin"
+			],
+			[
+				"st",
+				"startTime"
+			],
+			[
+				"play",
+				"playrecord"
+			],
+			[
+				"an",
+				"async"
+			],
+			[
+				"re",
+				"recordid"
+			],
+			[
+				"User",
+				"UserGame"
+			],
+			[
+				"gm",
+				"gmModels"
+			],
+			[
+				"game",
+				"gameid"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"tab",
+				"tabButton_1"
+			],
+			[
+				"butt",
+				"bst-button:info	bst-button-info"
+			],
+			[
+				"userg",
+				"usergame"
+			],
+			[
+				"bu",
+				"bst-button:default	bst-button-default"
+			],
+			[
+				"check",
+				"checkGameMaker"
+			],
+			[
+				"usergame",
+				"UserGame"
+			],
+			[
+				"chec",
+				"checkAccessible"
+			],
+			[
+				"maker",
+				"makerId"
+			],
+			[
+				"len",
+				"lean"
+			],
+			[
+				"mak",
+				"makerId"
+			],
+			[
+				"find",
+				"find"
+			],
+			[
+				"search",
+				"searchText"
+			],
+			[
+				"sea",
+				"searchUser"
+			],
+			[
+				"inpu",
+				"input-group"
+			],
+			[
+				"publ",
+				"publishDate"
+			],
+			[
+				"ga",
+				"Game"
+			],
+			[
+				"main",
+				"mainContent"
+			],
+			[
+				"gmd",
+				"gmModels"
+			],
+			[
+				"col",
+				"col-md-pull-"
+			],
+			[
+				"but",
+				"bst-button:success	bst-button-success"
+			],
+			[
+				"btn-",
+				"btn-default"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "download.html",
+			"settings":
+			{
+				"buffer_size": 7150,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "about.html",
+			"settings":
+			{
+				"buffer_size": 5609,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 7309,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "license.html",
+			"settings":
+			{
+				"buffer_size": 5173,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "guide.html",
+			"settings":
+			{
+				"buffer_size": 6241,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 334.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"package control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"format",
+				"Snippet: for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"ja",
+				"Snippet: Object Value JS"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/workspace/Git/BakeryWebsites/bke"
+	],
+	"file_history":
+	[
+		"/E/workspace/TWT/作业/2/作业-张子宵/myCanvas/myCanvas.js",
+		"/E/workspace/Git/BakeryWebsites/bke/css/about.css",
+		"/E/workspace/Git/BakeryWebsites/bke/css/index.css",
+		"/E/workspace/VPS/tmp/extend.bkscr",
+		"/E/workspace/Git/BakeryWebsites/bke/guide/quickstart.html",
+		"/E/workspace/bakery/BKE宣传页/src/index.html",
+		"/E/workspace/bakery/发布页/src/index.html",
+		"/E/workspace/Git/BakeryWebsites/bke/guide.html",
+		"/D/Dev/Qt5.3.1_nodll/5.3/Src/qtbase/src/corelib/itemmodels/qabstractitemmodel.cpp",
+		"/D/Dev/Qt5.3.1_nodll/5.3/Src/qtbase/src/widgets/itemviews/qabstractitemview.h",
+		"/D/Dev/Qt5.3.1_nodll/5.3/Src/qtbase/src/widgets/itemviews/qtreewidget.cpp",
+		"/E/qt-everywhere-opensource-src-5.4.0/qtbase/src/corelib/codecs/qtextcodec.cpp",
+		"/D/workspace/Git/BakeryWebsites/bke/license.html",
+		"/D/workspace/Git/BakeryWebsites/bke/css/license.css",
+		"/D/workspace/Git/BakeryWebsites/bke/css/about.css",
+		"/D/workspace/Git/BakeryWebsites/bke/src/index.html",
+		"/D/workspace/Git/BakeryWebsites/bke/src/css/index.css",
+		"/D/workspace/bakery/BKE新首页/src/download.html",
+		"/D/workspace/bakery/BKE新首页/src/css/guide.css",
+		"/D/workspace/bakery/BKE新首页/src/css/download.css",
+		"/D/workspace/bakery/BKE新首页/src/css/bkmd.css",
+		"/D/workspace/bakery/BKE新首页/src/css/about.css",
+		"/D/workspace/bakery/BKE新首页/src/about.html",
+		"/D/workspace/bakery/BKE新首页/src/guide.html",
+		"/D/workspace/bakery/BKE新首页/src/css/md.css",
+		"/D/workspace/bakery/BKE新首页/src/index.html",
+		"/D/workspace/bakery/BKE新首页/src/guide/image.html",
+		"/D/workspace/bakery/BKE新首页/src/guide/animation.html",
+		"/D/workspace/bakery/BKE新首页/src/guide/sound.html",
+		"/D/workspace/bakery/BKE新首页/src/guide/quickstart.html",
+		"/D/workspace/bakery/BKE宣传页/src/js/effect.js",
+		"/D/workspace/bakery/BKE宣传页/src/index.html",
+		"/D/workspace/bakery/BKE新首页/src/guide/grammar.html",
+		"/D/workspace/TWT/理论答题/src/考试答题.html",
+		"/D/workspace/bakery/BKE新首页/src/css/index.css",
+		"/D/workspace/bakery/BKE新首页/src/css/theme.css",
+		"/D/Program(x64)/Sublime Text 2 x64/Data/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/D/workspace/bakery/BKE宣传页/src/css/index.css",
+		"/D/workspace/iceleaf/live2d/framework/Live2DFramework.js",
+		"/D/workspace/iceleaf/live2d/simple.html",
+		"/D/workspace/iceleaf/live2d/src/Simple.js",
+		"/D/Games/永恆的賽妮亞_v1.55/素材來源.txt",
+		"/D/Games/永恆的賽妮亞_v1.55/遊戲操作方式.txt",
+		"/D/Games/永恆的賽妮亞_v1.55/製作成員.txt",
+		"/D/Games/永恆的賽妮亞_v1.55/贊助方式.txt",
+		"/D/workspace/iceleaf/pixi.js-master/bin/pixi.dev.js.map",
+		"/D/workspace/iceleaf/pixi.js-master/Gruntfile.js",
+		"/D/workspace/iceleaf/test/libs/pixi.js",
+		"/C/Users/Icemic/Documents/My Bluetooth/out.log",
+		"/D/workspace/bkeCloud/routes/play.js",
+		"/D/workspace/bkeCloud/routes/gameMaker.js",
+		"/D/workspace/bakery_web/extern/Array.js",
+		"/D/workspace/bakery_web/extern/dataFormat.js",
+		"/D/Program(x64)/Sublime Text 2 x64/Data/Packages/User/Preferences.sublime-settings",
+		"/D/workspace/bakery_web/package.json",
+		"/D/workspace/bkeCloud/routes/bkeCloud.js",
+		"/D/workspace/bakery_web/extern/err.js",
+		"/D/workspace/bkeCloud/models/gmModel.js",
+		"/D/workspace/bkeCloud/models/stdModel.js",
+		"/C/Users/Icemic/Desktop/untitled.md",
+		"/D/workspace/bakery/BKE宣传页/src/js/daisuki.js",
+		"/D/workspace/bkeCloud/models/cloudModel.js",
+		"/D/workspace/bakery_web/bin/www",
+		"/D/workspace/bakery_web/routes/users.js",
+		"/D/workspace/bakery_web/routes/index.js",
+		"/D/workspace/bakery_web/settings.js",
+		"/D/workspace/bkeCloud/app.js",
+		"/D/workspace/bkeCloud/package.json",
+		"/D/workspace/bakery_web/views/error.jade",
+		"/D/workspace/bakery_web/views/layout.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/blocks/forbidUserGameModal.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/blocks/addUserGameModal.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/blocks/deleteUserGameModal.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/blocks/activeModal.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/blocks/userAuthoritySingleTable.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/userauthority.jade",
+		"/D/workspace/bkeCloud/doc/todo",
+		"/D/workspace/bkeCloud/doc/cloud_doc.txt",
+		"/D/workspace/bkeCloud/doc/status.txt",
+		"/D/workspace/bkeCloud/public/gameMaker/stylesheets/theme.css",
+		"/D/workspace/bkeCloud/views/gameMaker/blocks/gameTable.jade",
+		"/D/workspace/bkeCloud/libs/dateFormat.js",
+		"/C/Users/Icemic/Desktop/test/ide/config.bkpsr",
+		"/C/Users/Icemic/Desktop/test/BKE_systemdemo/config.bkpsr",
+		"/D/workspace/bkeCloud/routes/bbs.js",
+		"/D/workspace/bkeCloud/routes/index.js",
+		"/C/Users/Icemic/Desktop/test/ide/proj/标准系统.bkon",
+		"/C/Users/Icemic/Desktop/test/ide/script/macro.bkscr",
+		"/D/workspace/TWT/理论答题/src/stylesheets/theme.css",
+		"/C/Users/Icemic/Desktop/test/ide/script/main.bkscr",
+		"/C/Users/Icemic/Desktop/test/ide/system/iceLib/iceLib_Settings.bkscr",
+		"/C/Users/Icemic/Desktop/test/ide/script/settings.bkpsr",
+		"/C/Users/Icemic/Desktop/test/ide/script/config.bkpsr",
+		"/C/Users/Icemic/Desktop/test/ide/script/story.bkscr",
+		"/D/workspace/bkeCloud/public/gameMaker/js/userlist.js",
+		"/C/Users/Icemic/Desktop/test/BKE_systemdemo/iceLib_Sys_Menu.bkscr",
+		"/D/Dev/Qt5.3.2/5.3/Src/a.txt",
+		"/D/Dev/Qt5.3.2/5.3/Src/README",
+		"/D/workspace/bkeCloud/views/gameMaker/sidebar.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/gamemain.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/mygames_edit.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/mygames.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/index.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/addgame.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/blocks/gameEdit.jade",
+		"/D/workspace/bakery/游戏制作者平台/AircraftAdmin-Free/index.html",
+		"/D/workspace/bkeCloud/views/gameMaker/userlist.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/blocks/userTable.jade",
+		"/D/workspace/bkeCloud/public/gameMaker/js/index.js",
+		"/D/workspace/bkeCloud/public/bbs/js/userlist.js",
+		"/D/workspace/bkeCloud/views/gameMaker/main.jade",
+		"/D/workspace/bkeCloud/public/bbs/js/admin.js",
+		"/D/workspace/bkeCloud/views/bbs/admin-user.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/navbar.jade",
+		"/D/workspace/bkeCloud/views/gameMaker/spin.jade",
+		"/D/workspace/bkeCloud/public/gameMaker/stylesheets/premium.css",
+		"/D/workspace/bkeCloud/views/bbs/loginForm.jade",
+		"/D/workspace/bakery/IDE-UI/src/_UI_SL.bkscr",
+		"/D/workspace/QtProj/IDE/src/style.css",
+		"/D/workspace/QtProj/IDE_test/A.bkproj",
+		"/D/Dev/Arduino/arduino-1.0.5-r2/libraries/IRremote/IRremote.h",
+		"/D/Dev/Arduino/arduino-1.0.5-r2/libraries/IRremote/IRremote.cpp",
+		"/D/Dev/Arduino/arduino-1.0.5-r2/libraries/IRremote/IRremoteInt.h",
+		"/D/11/src/js/index.js",
+		"/D/workspace/bkeCloud/views/bbs/topic.jade",
+		"/D/workspace/bkeCloud/views/bbs/editTopic.jade",
+		"/D/workspace/bkeCloud/views/bbs/publishTopic.jade",
+		"/D/workspace/bkeCloud/public/bbs/js/index.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"D:\\workspace\\bakery\\游戏制作者平台\\AircraftAdmin-Free",
+			"D:\\workspace\\bkeCloud\\public\\bbs\\images"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"bakerist",
+			"res",
+			"0px",
+			"360",
+			"QIconvCodec",
+			"edit",
+			"MIME",
+			"type",
+			"3",
+			"es/1-1.jpg\"",
+			"block",
+			"dl",
+			",",
+			"h",
+			"a:",
+			"body",
+			",",
+			", ",
+			"src=\"./images",
+			"src=\"images",
+			"scroll",
+			"<h2 id='sound",
+			"<h2>",
+			"f=\"#",
+			"<h2 id='image'",
+			"<h2>",
+			"href=\"#",
+			"<h2>",
+			"src=\"images/",
+			"guide-content",
+			"#",
+			"<h2>",
+			"h2",
+			"0",
+			"	<a href=\"\">",
+			"<li>\n							",
+			"<li>",
+			"\n",
+			"BKE",
+			"3px",
+			"3",
+			"bottom",
+			"1.41",
+			"sm",
+			"p-",
+			"png\"",
+			" ",
+			"-webkit-",
+			"	width: 35%;\n	height: 40px;\n	font-size: 18px;",
+			" style='color:#aaa;font-size:20px;'",
+			"style",
+			"aaa",
+			"4",
+			"3px",
+			"semantic",
+			"/jquer",
+			"/js",
+			"bg",
+			"v_texCoord",
+			"outTex",
+			"CrossFadeFilter",
+			" \\n",
+			"container",
+			"stage",
+			" \\n",
+			"CrossFadeFilter",
+			"BlurXFilter",
+			"bgTexture",
+			"AlphaMaskFilter",
+			" \\n",
+			"\\n\"",
+			"v_texCoord",
+			"\\n\"",
+			"\"",
+			"    \"src/pixi/filters/",
+			"\"src/pixi/",
+			".js",
+			"AbstractFilter",
+			"sepia",
+			"bunny",
+			"this",
+			"_Array",
+			"key",
+			"cry",
+			"nodeRSA",
+			"rsa",
+			"Item",
+			"'\n",
+			"\n",
+			"query",
+			"get",
+			"String",
+			"temp.",
+			"（开始游戏时所在的章节）",
+			"type",
+			"player",
+			"record",
+			"bke",
+			"dateFormat",
+			"platform",
+			"平台",
+			"Platform",
+			"Boolean",
+			"Number",
+			"player",
+			"success",
+			"nodeRSA",
+			"key",
+			"record",
+			"base",
+			"user",
+			"String",
+			"mobile",
+			"test",
+			"cloud",
+			"/*需要ip信息*/",
+			"Developer",
+			",\n",
+			"area: String,\n	",
+			"Activity",
+			"Permission",
+			"Key",
+			"Game",
+			"Player",
+			"User",
+			"    ",
+			"distinct",
+			"delete"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"res.sendEx",
+			"\\tapp",
+			"\\t",
+			"Sprite"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "download.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7150,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2718.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "about.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5609,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"is_preview": true,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1124.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7309,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5993,
+								5993
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3096.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "license.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5173,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5155,
+								5155
+							]
+						],
+						"settings":
+						{
+							"is_preview": true,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1999.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "guide.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6241,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6223,
+								6223
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 550.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 137.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "proj.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"/D/Develop/引擎重写/iceleaf.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 183.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

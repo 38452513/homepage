@@ -1,0 +1,165 @@
+
+
+#block-1{
+	/*min-height: 590px;*/
+	overflow: hidden;
+	background-image: url('../images/polygon-1.jpg');
+	background-size: 100%;
+}
+
+#block-1 .container{
+	margin-top: 120px;
+	margin-bottom: 60px;
+}
+
+#block-1-left img{
+	width: 100%;
+}
+
+#block-1-right{
+	padding-left: 60px;
+}
+
+#block-1 section{
+	margin-bottom: 25px;
+}
+
+#block-1 p{
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 1.42857143;
+}
+
+#block-1 h1{
+	color: #ffffff;
+	font-size: 64px;
+	margin-top: 10px;
+}
+#block-1 h2{
+	color: #ffffff;
+	font-size: 18px;
+	font-style: italic;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	opacity: 0.8;
+}
+
+#block-1 .btn-plat{
+	width: 45%;
+	height: 42px;
+	font-size: 18px;
+	color: white;
+	background-color: transparent;
+	border: 1px solid #fff;
+	outline: none;
+
+}
+
+#block-1 .btn-plat:hover{
+	animation-name: lightPulse;
+	animation-duration: 1.6s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	-webkit-animation-name: lightPulse;
+	-webkit-animation-duration: 1.6s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+}
+
+#block-1 .btn-plat:first-of-type{
+	margin-right: 7px;
+}
+#block-1 .btn-plat:last-of-type{
+	margin-left: 7px;
+}
+
+@keyframes lightPulse {
+	100% {box-shadow: 0 0 40px rgba(255,255,255,0.9); }
+}
+@-moz-keyframes lightPulse {
+	100% {box-shadow: 0 0 40px rgba(255,255,255,0.9); }
+}
+@-webkit-keyframes lightPulse {
+	100% {box-shadow: 0 0 40px rgba(255,255,255,0.9); }
+}
+
+#block-2 .container{
+	padding-top: 90px;
+	padding-bottom: 60px;
+	text-align: center;
+}
+
+#block-2 h2{
+	font-size: 40px;
+	font-weight: 300;
+	color: #333;
+}
+
+#block-2 p{
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 21px;
+	font-weight: 400;
+}
+
+#block-3 .container{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+#block-3 .row{
+	margin-bottom: 30px;
+}
+
+#block-3 img{
+	width: 100%;
+}
+
+#block-3 h3{
+	margin-bottom: 7px;
+	font-weight: 400;
+	font-size: 26px;
+	color: #333;
+	text-align: center;
+}
+#block-3 p{
+	text-align: center;
+	font-size: 18px;
+	line-height: 1.42857143;
+}
+
+#block-4 .container{
+	padding-top: 40px;
+	padding-bottom: 60px;
+	text-align: center;
+}
+
+#block-4 h2{
+	font-size: 40px;
+	font-weight: 300;
+	color: #333;
+}
+
+#block-4 p{
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 21px;
+	font-weight: 400;
+	margin-bottom: 50px;
+}
+
+#block-4 a{
+	color: #333;
+}
+
+#block-4 a:hover{
+	color: #777;
+	text-decoration: none;
+}
+
+.block-4-game img:hover{
+	box-shadow: 0 0 40px #777;
+}

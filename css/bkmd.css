@@ -1,0 +1,291 @@
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* Modify: Icemic - http://icemaple.info */
+
+/* RESET
+=============================================================================*/
+
+/*html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}*/
+
+/* BODY
+=============================================================================*/
+
+/*body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}*/
+
+/* BLOCKS
+=============================================================================*/
+
+.bkmd p, .bkmd blockquote, .bkmd ul, .bkmd ol, .bkmd dl, .bkmd table, .bkmd pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+.bkmd h1, .bkmd h2, .bkmd h3, .bkmd h4, .bkmd h5, .bkmd h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+.bkmd h1 tt, .bkmd h1 code, .bkmd h2 tt, .bkmd h2 code, .bkmd h3 tt, .bkmd h3 code, .bkmd h4 tt, .bkmd h4 code, .bkmd h5 tt, .bkmd h5 code, .bkmd h6 tt, .bkmd h6 code {
+  font-size: inherit;
+}
+
+.bkmd h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+.bkmd h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+  border-left: 3px solid #37BA55;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #37BA55;
+  max-width: 90%;
+}
+
+.bkmd h3 {
+  font-size: 18px;
+}
+
+.bkmd h4 {
+  font-size: 16px;
+}
+
+.bkmd h5 {
+  font-size: 14px;
+}
+
+.bkmd h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+.bkmd>h2:first-child, .bkmd>h1:first-child, .bkmd>h1:first-child+h2, .bkmd>h3:first-child, .bkmd>h4:first-child, .bkmd>h5:first-child, .bkmd>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.bkmd a:first-child h1, .bkmd a:first-child h2, .bkmd a:first-child h3, .bkmd a:first-child h4, .bkmd a:first-child h5, .bkmd a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.bkmd h1+p, .bkmd h2+p, .bkmd h3+p, .bkmd h4+p, .bkmd h5+p, .bkmd h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+.bkmd a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+.bkmd a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+.bkmd ul, .bkmd ol {
+  padding-left: 30px;
+}
+
+.bkmd ul li > :first-child, 
+.bkmd ol li > :first-child, 
+.bkmd ul li ul:first-of-type, 
+.bkmd ol li ol:first-of-type, 
+.bkmd ul li ol:first-of-type, 
+.bkmd ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+.bkmd ul ul, .bkmd ul ol, .bkmd ol ol, .bkmd ol ul {
+  margin-bottom: 0;
+}
+
+.bkmd dl {
+  padding: 0;
+}
+
+.bkmd dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+.bkmd dl dt:first-child {
+  padding: 0;
+}
+
+.bkmd dl dt>:first-child {
+  margin-top: 0px;
+}
+
+.bkmd dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+.bkmd dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+.bkmd dl dd>:first-child {
+  margin-top: 0px;
+}
+
+.bkmd dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+.bkmd pre, .bkmd code, .bkmd tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+.bkmd code, .bkmd tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+.bkmd pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+.bkmd pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+.bkmd pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+.bkmd kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+.bkmd blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+.bkmd blockquote>:first-child {
+  margin-top: 0px;
+}
+
+.bkmd blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+.bkmd hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+.bkmd table th {
+  font-weight: bold;
+}
+
+.bkmd table th, .bkmd table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+.bkmd table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.bkmd table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+.bkmd img {
+  max-width: 100%
+}

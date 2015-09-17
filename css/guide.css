@@ -1,0 +1,82 @@
+body{
+	position: relative;
+}
+
+#block-1 .container{
+	text-align: left;
+}
+
+#block-1 .container h1{
+	font-size: 54px;
+	color: #fff;
+
+}
+
+#block-1 .container p{
+	font-size: 32px;
+	color: rgba(255,255,255,0.65);
+	max-width: 70%;
+}
+
+.guide-container{
+	margin-top: 40px;
+}
+
+#guide-sidebar{
+	margin-top: 20px;
+	top: 60px;
+}
+
+
+.guide-nav > li > a{
+	font-size: 14px;
+	padding: 5px 20px;
+	line-height: 26px;
+	color: #888;
+	border-left: 1px solid transparent;
+}
+.guide-nav > li > a:hover{
+	background-color: transparent;
+	border-left: 1px solid #37BA55;
+	color: #37BA55;
+}
+
+.guide-nav > li > ul{
+	padding-left: 0;
+	display: none;
+}
+
+.guide-nav > li > ul > li{
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+}	
+
+.guide-nav > li > ul > li > a{
+	font-size: 13px;
+	padding: 1px 36px;
+	color: #888;
+	border-left: 1px solid transparent;
+	text-decoration: none;
+}
+
+.guide-nav > li > ul > li > a:hover{
+	border-left: 1px solid #37BA55;
+	color: #37BA55;
+}
+
+.guide-nav > li.active > a{
+	padding-left: 19px;
+	border-left: 2px solid #37BA55;
+	color: #37BA55;
+}
+
+.guide-nav > li.active > ul{
+	display: block;
+}
+
+.guide-nav > li > ul > li.active > a{
+	padding-left: 35px;
+	border-left: 2px solid #37BA55;
+	color: #37BA55;
+}

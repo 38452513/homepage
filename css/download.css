@@ -1,0 +1,19 @@
+#block-1 .container{
+	text-align: left;
+}
+
+#block-1 .container h1{
+	font-size: 54px;
+	color: #fff;
+
+}
+
+#block-1 .container p{
+	font-size: 32px;
+	color: rgba(255,255,255,0.65);
+	max-width: 70%;
+}
+
+.download-container{
+	margin-top: 40px;
+}
