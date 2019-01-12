@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Cache-Control" content="no-siteapp" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
+
+        <meta name="description" content="原创乙女向恋爱恐怖解密游戏《DOLL》，精美的画面，丰富的演出，优美的音乐，扑朔迷离的剧情走向……快来享受一场华丽的视听盛宴吧~">
+        <meta name="keywords" content="解谜游戏, 乙女游戏, 文字冒险, 独立游戏, 同人游戏">
+
+        <title>Dreaming On the Last Light - Everlasting 游戏制作组</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                box-sizing: border-box;
+            }
+            body {
+                background-color: black;
+                background-image: url(./images/bg.jpg);
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+            *:not(input, textarea) {
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+            }
+            button {
+                outline: none;
+                cursor: pointer;
+                width: 200px;
+                height: 60px;
+                border: 2px solid rgba(255, 255, 255, 0.6);
+                border-radius: 3px;
+                background-color: rgba(255, 255, 255, 0.1);
+                transition: background-color cubic-bezier(0.215, 0.610, 0.355, 1) .6s;
+            }
+            button:hover {
+                background-color: rgba(255, 255, 255, 0.4);
+            }
+            button a::before {
+                content: '';
+                position: absolute;
+                width: 28px;
+                height: 28px;
+            }
+            button a {
+                text-decoration: none;
+                color: #fff;
+                font-family: "PingFang SC", "Microsoft YaHei";
+                font-size: 24px;
+                padding-left: 35px;
+            }
+            button.ios {
+                position: absolute;
+                left: 46%;
+                top: 73%;
+            }
+            button.ios a::before {
+                left: 40px;
+                background: url(./images/ios-logo.png) no-repeat;
+                background-size: cover;
+            }
+            button.android {
+                position: absolute;
+                left: 68%;
+                top: 73%;
+            }
+            button.android a::before {
+                left: 35px;
+                background: url(./images/android-logo.png) no-repeat;
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="ios"><a href="https://itunes.apple.com/app/id1171743954" target="_blank">iPhone</a></button>
+        <button class="android"><a href="https://www.taptap.com/app/28749" target="_blank">Android</a></button>
+    </body>
+</html>
